@@ -2,6 +2,7 @@ from datetime import date
 
 from pydantic import BaseModel, ConfigDict
 
+
 class MovieDetailResponseSchema(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 

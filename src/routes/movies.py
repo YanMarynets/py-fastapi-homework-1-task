@@ -8,7 +8,9 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from database import get_db, MovieModel
 from schemas import MovieListResponseSchema, MovieDetailResponseSchema
 
+
 router = APIRouter()
+
 
 @router.get("/movies/", response_model=MovieListResponseSchema)
 async def get_all_movies(
